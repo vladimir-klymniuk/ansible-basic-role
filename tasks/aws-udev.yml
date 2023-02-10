@@ -1,0 +1,31 @@
+- name: Copy 10-xvd-to-sd.rules to destination location
+  copy:
+    src: files/aws-udev/10-xvd-to-sd.rules
+    dest: /etc/udev/rules.d/10-xvd-to-sd.rules
+    owner: root
+    group: root
+    mode: 0644
+
+- name: Copy 70-ec2-nvme-devices.rules to destination location
+  copy:
+    src: files/aws-udev/70-ec2-nvme-devices.rules
+    dest: /etc/udev/rules.d/70-ec2-nvme-devices.rules
+    owner: root
+    group: root
+    mode: 0644
+
+- name: Copy ebsnvme-id to destination location
+  copy:
+    src: files/aws-udev/ebsnvme-id
+    dest: /sbin/ebsnvme-id
+    owner: root
+    group: root
+    mode: 0744
+
+- name: Copy ec2udev-vbd to destination location
+  copy:
+    src: files/aws-udev/ec2udev-vbd
+    dest: /sbin/ec2udev-vbd
+    owner: root
+    group: root
+    mode: 0744

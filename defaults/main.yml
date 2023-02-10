@@ -1,0 +1,22 @@
+---
+
+basic_packages:
+  - acpi
+  - dnsutils
+  - htop
+  - iftop
+  - iotop
+  - lsof
+  - ntp
+  - parted
+  - rsync
+  - smartmontools
+  - strace
+  - jq
+  - mtr
+  - ncdu
+  - python-pip
+
+pip_packages:
+  - awscli
+  - yq
